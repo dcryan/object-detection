@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/icons": "^4.11.2",
     "@tensorflow-models/coco-ssd": "^2.2.1",
     "@tensorflow/tfjs-backend-cpu": "^2.8.5",
     "@tensorflow/tfjs-backend-webgl": "^2.8.5",
