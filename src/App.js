@@ -6,7 +6,6 @@ import * as cocoSsd from '@tensorflow-models/coco-ssd';
 
 import './App.css';
 
-
 function App() {
   const canvasRef = useRef(null);
   const videoRef = useRef(null);
@@ -58,8 +57,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <video ref={videoRef} />
-        {/* <img src={image} alt="chair" /> */}
+        <video ref={videoRef}  muted playsInline autoPlay />
         <canvas id="canvas" ref={canvasRef} height={window.innerHeight} width={window.innerWidth}/>
       </div>
     </div>
