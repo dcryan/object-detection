@@ -75,9 +75,11 @@ function App() {
         <video ref={videoRef}  muted playsInline autoPlay />
         <canvas id="canvas" ref={canvasRef} height={window.innerHeight} width={window.innerWidth}/>
 
-        <IconButton id="button" onClick={() => setDialogOpen(true)}>
-          <VideocamIcon/>
-        </IconButton>
+        {devices.length > 1 && (
+          <IconButton id="button" onClick={() => setDialogOpen(true)}>
+            <VideocamIcon/>
+          </IconButton>
+        )}
       </div>
 
 
